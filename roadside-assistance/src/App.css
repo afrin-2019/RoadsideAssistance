@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.scrollable {
+  height: 300px;
+  overflow: auto;
+}
+
+.scrollable thead th {
+  position: sticky;
+  top: 0;
+}
+th {
+  background: #eee;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 20;
+  left: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  padding-top: 12px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: blue;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+.openbtn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.bg-gradient {
+  background-color: #0061f2;
+}
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+}
+.header-center {
+  align-items: center;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
